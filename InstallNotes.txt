@@ -1,0 +1,890 @@
+conda freeze > requirements_conda.txt
+pip freeze > requirements_pip.txt
+pip install tensorflow==2.3.1
+pip uninstall tensorflow
+pip show tensorflow
+pip install scikit-learn==0.23.2
+pip install scikit-learn==0.23.3
+pip uninstall scikit-learn
+pip install scikit-learn==0.23.0
+pip show gensim | grep Version
+pip show scikit-learn
+pip show sklearn
+pip install tensorflow
+pip install tensorflow==2.3.0
+conda uninstall tensorflow
+conda uninstall scikit-learn
+conda install scikit-learn==0.23.2
+conda uninstall sklearn
+pip uninstall sklearn
+pip  install tensorflow==2.4.0
+conda install tensorflow==2.4.0
+conda install tensorflow==2.3.0 -c conda-forge
+conda install tensorflow==2.3.0
+conda install  -c conda-forge IProgress
+conda install IProgress
+conda install  -c conda-forge ipywidgets
+conda install -n py37 -c conda-forge ipywidgets
+sudo conda install -n base -c conda-forge widgetsnbextension
+conda install -n base -c conda-forge widgetsnbextension
+pip install ipywidgets widgetsnbextension
+pip install ipywidgets
+pip install IProgress
+pip install jupyter
+pip uninstal tensorflow
+conda install scikit-learn
+conda install sklearn
+pip install ktrain
+pip install sklearn
+pip install pandas
+python3 -m ipykernel install --user --name=dga
+conda install ipykernel
+conda activate dga
+conda create --name dga python=3.7.10
+atom .
+cd dga-weak-supervised/
+git clone https://github.com/amir1m/dga-weak-supervised.git
+conda deactivate
+ifconfig -a
+pip install stellargraph
+mv 03_supervised_classsification_graphSAGE-TFIDF.ipynb.txt 03_supervised_classsification_graphSAGE-TFIDF.ipynb
+ls -ltr
+pip3 install gensim
+pipe install gensim
+pip install gensim
+pip uninstall gensim
+pip install gensim==3.8.0
+pip uninstall gensim==3.8.0
+pip install -I gensim==3.8.0
+pip install node2vec
+pip install python-louvain
+pip uninstall community
+pip3 install --upgrade networkx
+pip install community
+pip install gensim==3.8.3
+pip install textacy
+pip install findSVOs
+pip install subject_object_extraction
+python -m spacy download en_core_web_md
+cd Projects/graph-nn/
+cd
+cd ..
+pip install spacy
+pip install fasttext
+pip install langdetect
+pdflatex Manuscript_NoAuthor
+pdflatex Manuscript
+bibtex Manuscript_NoAuthor
+pdflatex Manuscript.tex
+bibtex Manuscript
+cp ../bao.bib .
+bibtex Manuscript.tex
+cd Projects/dissert-adv-nids/Paper-2/Springer/
+grep 'Prediction Not Equal?: True' opytimizer.log | wc -l
+grep -A1 'Prediction Not Equal?: True' opytimizer.log | grep L_2| awk -F':' '{print $4}'|awk '{ sum += $0; n++ } END { if (n > 0) print sum / n; }'
+git push
+git commit -m "More Brownian BAOA"
+git add opytimizer/optimizers/misc/modaoa.py
+git status
+rm opytimizer.log
+mkdir test_hard_label_more_brown_modaoa_20_iters_210_queries
+git commit -m "CIFAR Untargeted Hard Label MORE BROWN attack: Queries:820, Avg L2:1.75384, Adv Ex.:58"
+git add adv-ml/Visualize-Paper.ipynb test_hard_label_aoa_40_iters_820_queries/ test_hard_label_modaoa_30_iters/opytimizer.log test_hard_label_more_brown_modaoa_40_iters_820_queries
+cp opytimizer.log test_hard_label_more_brown_modaoa_40_iters_820_queries/
+ls -ltrh
+pwd
+cd adv-ml/
+pip install git+git://github.com/gugarosa/opytimark
+conda activate opyt
+git pull
+rm CLEAN_Y.csv
+ls
+git checkout CLEAN_Y.csv
+cd test_hard_label_modaoa_iter_200
+cp test_hard_label_modaoa_20_iters/CLEAN_Y.csv test_hard_label_modaoa_iter_200/
+git commit -m "CIFAR Untargeted Hard Label attack: Queries:210, Avg L2:1.864, Adv Ex.:39"
+git add test_hard_label_modaoa_20_iters/
+cp opytimizer.log test_hard_label_modaoa_20_iters/
+mkdir test_hard_label_modaoa_20_iters
+git commit -m "CIFAR Untargeted Hard Label attack: Queries:465, Avg L2:1.292, Adv Ex.:41"
+git add test_hard_label_modaoa_30_iters
+cd Projects/opytimizer/
+rm /Library/TeX/Local/tex/latex/algolyx.sty
+rm ~/Library/Application\ Support/LyX-2.3/layouts/algorithm.inc
+rm ~/Library/Application\ Support/LyX-2.3/layouts/article-algo.layout
+sudo cp algolyx.sty /Library/TeX/Local/tex/latex/.
+cp algolyx.sty /Library/TeX/Local/tex/latex/.
+which pdftex
+cp algorithm.inc ~/Library/Application\ Support/LyX-2.3/layouts/.
+cp article-algo.layout ~/Library/Application\ Support/LyX-2.3/layouts/.
+cp article-algo.layout ~/Library/Application\ Support/LyX-2.0/layouts/.
+cd algo-0.3/
+tar -zxvf algo-0.3.tar.gz
+git commit -m "CIFAR Untargeted Hard Label attack: Queries:1620, Avg L2:1.15, Adv Ex.:46"
+git commmit -m "CIFAR Untargeted Hard Label attack: Queries:1620, Avg L2:1.15, Adv Ex.:46"
+git add test_hard_label_modaoa_80_iters/CIFAR\ 100
+git add test_hard_label_modaoa_80_iters/CIFAR 100
+git add test_hard_label_modaoa_80_iters Notes.txt adv-ml/attack.py adv-ml/mnist-adv-v1.py
+cp opytimizer.log  test_hard_label_modaoa_80_iters/
+grep  'Prediction Not Equal?: True' opytimizer.log | wc -l
+grep -A1 'Prediction Not Equal?: True' opytimizer.log | wc -l
+grep -A1 'Prediction Not Equal?: True' opytimizer.log | grep L_2| awk -F':' '{print $4}'
+grep -A1 'Prediction Not Equal?: True' opytimizer.log | grep L_2| awk -F':' '{print $3}'
+grep -A1 'Prediction Not Equal?: True' opytimizer.log | grep L_2
+grep -A1 'Prediction Not Equal?: True' opytimizer.log
+sed  -n '/Prediction\ Not\ Equal\?\:\ True/{n;p}' opytimizer.log
+sed  -n '/Prediction Not Equal?: True/{n;p}' opytimizer.log
+mkdir test_hard_label_modaoa_80_iters
+rm -rf  test_hard_label_modaoa_80_iters
+mkdir test_hopskipjump
+git checkout adv-ml/attack.py
+git checkout adv-ml/mnist-adv-v1.py
+rm opytimizer.log.2021-07-14 opytimizer.log
+git checkout opytimizer/optimizers/misc/modaoa.py
+pandoc -s -f latex -o Survey.tex -t docx -o Survey.docx
+pandoc -s -f latex -o Survey.tex -t docx Survey.docx
+pandoc Survey.tex -o Survey.docx
+pandoc -s -f latex -o Survey.tex -t docx Survey.docs
+rm Survey.docx
+pandoc Survey.tex --mathjax --bibliography=bao.bib -o Survey.docx
+pandoc Survey.tex --bibliography=bao.bib -o Survey.docx --mathjax
+pandoc Survey.tex --bibliography=bao.bib -o Survey.docx
+pandoc -s --filter pandoc-citeproc -f latex -o Survey.tex  --bibliography=bao.bib -t docx Survey.docx
+pandoc -s --filter pandoc-citeproc -f latex -o Survey.tex  -t docx Survey.docx
+pandoc -s --filter pandoc-citeproc --bibliography=bao.bib -f latex -o Survey.docx -t docx Survey.tex --mathjax
+pandoc -s --filter pandoc-citeproc --bibliography=bao.bib -f latex -o Survey.docx -t docx Survey.tex
+pandoc -s --filter pandoc-citeproc -f latex -o Survey.docx -t docx Survey.tex
+pandoc -s --filter pandoc-citeproc -f latex -o Survey.docx -t docx
+Survey.tex
+pandoc -s --filter pandoc-citeproc -f latex -o "Survey.docx" -t docx
+"Survey.tex"
+pandoc-citeproc --help
+pandoc-citeproc
+brew install pandoc-citeproc
+pandoc Survey.tex
+cd Survey/
+cd dissert-adv-nids/
+pandoc --help
+cd time-series/
+git clone https://github.com/amir1m/time-series.git
+cd Projects/
+git add -A; git commit -m "Springer draft added"; git push
+cd -
+python3 -W ignore adv-ml/ImageNetAttacks.py
+git stash
+git add -A; git commit -m "Imagenet 3378.18, added logging statements"; git push
+rm opytimizer.log.2021-07-13
+git add -A; git commit -m "Imagenet 3378.18"; git push
+git add -A; git commit -m "Imagenet 3939.41"; git push
+git add -A; git commit -m "Imagenet 4054.52"; git push
+rm opytimizer.log.2021-07-12
+git commit -m "Imagenet attack:4343.2 "
+git add -A
+rm -rf .git/
+cd data/imagenet-sample-images/
+rm opytimizer.log.2021-07-11
+pip install torchvision
+rm opytimizer.log.2021-07-09 opytimizer.log.2021-07-10
+cd opytimizer/adv-ml/
+tail -n 1000 opytimizer.log
+git clone https://github.com/EliSchwartz/imagenet-sample-images.git
+cd data/
+mkdir data
+python3 -m pip install foolbox
+GIT STASH
+git commit -m "Trageted attack L2: 9.3235 Queries 541"
+git pusj
+git p
+git commit -m "Trageted attack L2: 9.53 Queries 541"
+git commit -m "Trageted attack L2: 9.858 Queries 541"
+git commit -m "Trageted attack L2: 6.4273 Queries 12601"
+cd rtrade/
+git clone https://github.com/amir1m/rtrade.git
+cd ,,
+rm opytimizer.log.2021-06-29
+git commit -m "Trageted attack L2: 9.858 541.0"
+git commit -m "Trageted attack, added clip"
+git commit -m "Target attack L2 11.0234 with 540.0 queries"
+git credential-osxkeychain erase
+git push https://github.com/amir1m/opytimizer Username:amir1m Password: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
+git push Username:amir1m Password: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
+git push Username:amir1m Password: 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
+git config --global credential.helper store
+git commit -m "Target attack L2 16.843 with 540.0 queries"
+git commit -m "Target attack L2 11.9 with 420 queries"
+git commit -m "Target attack L2 11.2"
+git commit -m "Targetted attack"
+rm opytimizer.log.2021-06-15 opytimizer.log.2021-06-16 opytimizer.log.2021-06-23
+rm opytimizer.log.2021-06-28 opytimizer.log.2021-06-27 opytimizer.log.2021-06-26
+rm opytimizer.log.2021-06-25
+mkdir target_opyt
+git commit -m "Max score attack MODAOA"
+git add adv-ml/Visualize.ipynb
+git add score_cifar
+Grep  'Attack result:True' opytimizer.log | awk -F':' '{print $7}'|awk -F',' '{print $1}' | awk '{ sum += $0; n++ } END { if (n > 0) print sum / n; }'
+rep  'Attack result:True' opytimizer.log | awk -F':' '{print $7}'|awk -F',' '{print $1}' | awk '{ sum += $0; n++ } END { if (n > 0) print sum / n; }'
+cp opytimizer.log  score_cifar/
+git commit -m "hard label params"
+git commit -m "add vis"
+git commit -m "rm vis"
+git checkout adv-ml/Visualize.ipynb
+git rm adv-ml/Visualize.ipynb
+git stash adv-ml/Visualize.ipynb
+rm adv-ml/Visualize.ipynb
+git commit -m "Hard Label attack 47 adv examples biund 0.25"
+bash
+grep '/Prediction Not Equal?: True/{getline; print}' opytimizer.log
+awk '/Prediction Not Equal?: True/{getline; print}' opytimizer.log
+grep  'Attack result:True' opytimizer.log | awk -F':' '{print $7}'|awk -F',' '{print $1}' | awk '{ sum += $2; n++ } END { if (n > 0) print sum / n; }'
+grep  'Attack result:True' opytimizer.log | awk -F':' '{print $7}'|awk -F',' '{print $1}'
+grep  'Attack result:True' opytimizer.log | awk -F':' '{print $7}'
+grep  'Attack result:True' opytimizer.log | awk -F':' '{print $6}'
+grep  'Attack result:True' opytimizer.log
+cp opytimizer.log  hard_label_cifar_1/
+cp -r soft/ hard_label_cifar_1/
+cp soft/ hard_label_cifar_1/
+mkdir hard_label_cifar_1
+tail -f opytimizer
+rm opytimizer.log.2021-06-21 opytimizer.log.2021-06-22 opytimizer.log.2021-06-23 opytimizer.log.2021-06-24
+git commit -m "New Title Page"
+git commit -m "CPGCON stuff"
+mv sem2 seminar-2
+cd sem2/
+rm opytimizer.log*
+mkdir test_modaoa
+rm opytimizer.log.2021-06-18
+r, opytimizer.log.2021-06-18
+grep 'Attack result:True' opytimizer.log
+head -100 opytimizer.log
+grep 'Exploration Phase#1 Result: Attack result:True' opytimizer.log
+grep 'Exploration Phase#1 Result: Attack result:True' opytimizer.log| awk -F',' '{print $3}' | awk -F':' '{print $3}' | awk '{ sum += $0; n++ } END { if (n > 0) print sum / n; }'
+grep 'Exploration Phase#1 Result: Attack result:True' opytimizer.log| awk -F',' '{print $3}' | awk -F':' '{print $3}'
+cp opytimizer.log  test_opyt_cso/
+mv test_opyt test_opyt_cso
+mkdir test_opyt
+wc -l HOPSKIPJUMP_X.csv
+wc -l
+cd soft/
+git commit -m "removed old logs"
+git commit -m "logs"
+git add soft/opytimizer.log
+git commit -m "Visualize"
+git commit -m "autoencoder"
+git add adv-ml/NANv1.py
+git commit -m "soft dir"
+git add test_soft
+git commit -m "PSO 100 Examples CIFAR 10"
+git add test-PSO/
+GIT STATUS
+grep 'Exploration Phase#1 Result: Attack result:True' opytimizer.log| awk -F',' '{print $3}' | awk -F':' '{print $3}'| wc -l
+cp opytimizer.log test-PSO/
+grep 'Exploration Phase#1 Result: Attack result:True' opytimizer.log| awk -F',' '{print $3}' | awk -F':' '{print $3}' | awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+wc -l SIMBA_X.csv
+cd test_soft/
+wc -l y_pred_opyt_cifar10.csv
+cd MODAOA_data/
+wc -l OPYT_Y.csv
+mkdir test-PSO
+cp opytimizer.log  soft/
+git commit -m "CIFAR 10 Examples All Attacks"
+mkdir test_soft
+ls -ltr soft/
+ls -ltrsoft/
+ls soft/
+git commit -m "All attacls integrated"
+git commit -m "All attacks"
+LS
+mkdir soft
+RM opytimizer.log
+CP opytimizer.log MODAOA_data/
+git commit -m 'CIFAR 100 examplesTotal Examples: 100, Iterations:60, espilon: 0.05 and Max-L2:1 Agents: 30 l_2_mul: 0.5 Accuracy: 61.0 Mean L2 Counted: 2.1196403196087146 Query: 1831.0'
+cp y_test_random_cifar10.csv MODAOA_data/
+cp x_test_random_cifar10.csv MODAOA_data/
+cp y_pred_opyt_cifar10.csv MODAOA_data/
+cp x_test_opyt_cifar10.csv MODAOA_data/
+cp opytimizer.log MODAOA_data/
+grep 'Exploration Phase#1 Result: Attack result:True' opytimizer.log\ \(1\).2021-06-11 | awk -F',' '{print $3}' | awk -F':' '{print $3}' | awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+grep True opytimizer.log (1).2021-06-11 | wc -l
+grep True opytimizer.log (1).2021-06-11
+greo True opytimizer.log (1).2021-06-11
+grep 'Exploration Phase#1 Result: Attack result:True' opytimizer.log| awk -F',' '{print $3}'
+grep 'Exploration Phase#1 Result: Attack result:True' opytimizer.log| awk -F',' '{print $2}'
+grep 'Exploration Phase#1 Result: Attack result:True' opytimizer.log| awk -F',' '{print $1}'
+grep 'Exploration Phase#1 Result: Attack result:True' opytimizer.log | wc -l
+grep 'Exploration Phase#1 Result: Attack result:True' opytimizer.log |awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+ssh amirmukeri@192.168.1.9
+ssh amirmukeri@192.168.1.6
+grep 'Attack result:True' opytimizer.log| grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+grep grep 'Attack result:True' opytimizer.log| grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+grep grep 'Attack result:True' opytimizer.log grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+ssh amir@192.168.1.6
+ssh amirmukeri@192.168.1.7
+grep 'Attack result:True' AOA_data/CIFAR\ 20\ Examples\ AOA.txt | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+grep 'Attack result:True' AOA_data/CIFAR\ 20\ Examples\ MODAOA.txt | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+grep 'Attack result:True' MODAOA_data/CIFAR\ 20\ Examples\ MODAOA.txt | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+grep 'Attack result:True' MODCIFAR\ 20\ Examples\ MODAOA.txt | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+grep 'Attack result:True' CIFAR\ 20\ Examples\ AOA.txt | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+cd AOA_data/
+CD ..
+grep 'Attack result:True' CIFAR\ 20\ Examples\ MODAOA.txt | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+grep 'Attack result:True' CIFAR\ 20\ Examples\ MODAOA.txt | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+1.25708
+grep 'Exploration Phase#1' CIFAR\ 20\ Examples\ MODAOA.txt  | grep 'Attack result:True'
+grep 'Exploration Phase#1' opytimizer.log | grep 'Attack result:True'
+grep 'Exploration Phase#1' opytimizer.log | grep 'Attack result:True' | awk -F':' '{print $7}'
+grep 'Exploration Phase#1' opytimizer.log | grep 'Attack result:True' | awk -F':' '{print $7}' | awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+grep 'Exploration Phase#1' opytimizer.log | grep 'Attack result:True' | awk -F':' '{print $6}'
+grep 'Exploration Phase#1' opytimizer.log | grep 'Attack result:True' | awk -F':' '{print $8}'
+grep 'Exploration Phase#1' opytimizer.log | grep 'Attack result:True' | awk -F':' '{print $9}'
+grep 'Exploration Phase#1' opytimizer.log | grep 'Attack result:True' | grep Dist
+grep 'Exploration Phase#1' opytimizer.log
+grep 'Exploration Phase#1' opytimizer.log | grep 'Attack result:True' | grep L2
+grep 'Exploration Phase#1' opytimizer.log | grep 'Attack result:True' | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'
+grep 'Exploration Phase#1' opytimizer.log | grep 'Attack result:True' | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+grep 'Attack result:True' opytimizer.log  | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+grep 'Attack result:True' CIFAR\ 20\ Examples\ MODAOA.txt | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum += $2; n++ } END { if (n > 0) print sum / n; }'
+grep 'Attack result:True' CIFAR\ 20\ Examples\ MODAOA.txt | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'| awk '{ sum+=$1} END {print sum}'
+grep 'Attack result:True' CIFAR\ 20\ Examples\ MODAOA.txt | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $1}'
+grep 'Attack result:True' CIFAR\ 20\ Examples\ MODAOA.txt | grep L2 | awk -F':' '{print $7}' | awk -F',' '{print $0}'
+grep 'Attack result:True' CIFAR\ 20\ Examples\ MODAOA.txt | grep L2 | awk -F':' '{print $7}' | awk -F','
+grep 'Attack result:True' CIFAR\ 20\ Examples\ MODAOA.txt | grep L2 | awk -F':' '{print $7}'
+grep 'Attack result:True' CIFAR\ 20\ Examples\ MODAOA.txt | grep L2 | awk -F':' '{print $1}'
+grep 'Attack result:True' CIFAR\ 20\ Examples\ MODAOA.txt | grep L2
+grep 'Attack result:True' CIFAR\ 20\ Examples\ MODAOA.txt | wc -l
+grep 'Attack result:True' CIFAR\ 20\ Examples\ MODAOA.txt
+cp CIFAR\ 20\ Examples\ MODAOA.txt MODAOA_data/
+CP y_test_random_cifar10.csv  MODAOA_data/
+ls *cifar10.csv
+ls *.csv
+ls .csv
+ls '*cfar.csv'
+ls *cfar.csv
+mkdir MODAOA_data
+ll
+git commit -m "mnist not much of l2 gain"
+git oush
+git commit m "mnist not much of l2 gain"
+gut push
+GIT PUSH
+git commit -m "MNIST 10 EXAMPLES MOAOA + CS(1/2) L2: 4.29"
+head opytimizer.log
+python3
+git commit -m "pip requirements"
+git commit -m "updated requirement.txt"
+conda list -e > requirements.txt
+git commit -m "CIFAR MOAOA + CS(1/2) L2: 2.77"
+git commit -m "CIFAR 3.307, Total Examples: 1, Iterations:60, espilon: 0.15 and Max-L2:3 Agents: 30 l_2_mul: 0.5
+Accuracy: 0.0 Mean L2 Counted: 3.3074719988402874 Query: 1831.0 10 minutes"
+sudo chown -R `whoami`:admin /usr/local/bin
+sudo brew link p0f
+brew link p0f
+brew install p0f
+git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch --unshallow
+sudo brew install p0f
+p0f -i en0 -p -o /tmp/p0f.log
+git commit -m "CIFAR 4.06"
+vi opytimizer.log
+tail -1000 opytimizer.log
+tail -n 100 opytimizer.log
+git commit -m "CIFAR working"
+nvcc
+octave
+git commit -m "CIFAR working Total Examples: 1, Iterations:50, espilon: 0.25 and Max-L2:5 Agents: 25 l_2_mul: 1 Accuracy: 0.0 Mean L2 Counted: 4.622298702671254 Query: 2552.0"
+git statu
+git commit -m "Target Attack 5 examples, L2 mean 4.52, query 3256, time 40 minutes"
+git commit -m "Targetted Attack: L2=3.8, Query=2604"
+git commit -m "Updated requirement"
+pip freeze > requirements.txt
+pip freeze
+git commit -m "Minor visulaization lib changes"
+jupyter nbextension list
+python -W ignore adv-ml/mnist-adv-v1.py
+jupyter nbextension enable --py widgetsnbextension
+git commit -m "L2 Mean: 4.46, Total Examples: 10, Iterations:50, espilon: 1.1 and Max-L2:5 Agents: 25 l_2_mul: 3 Accuracy: 0.0 Mean L2 Counted: 4.4605463352947865 Query: 5052.0"
+git commit -m "Removed best agent copy as not needed"
+git commit -m "L2=2.51, 50 iterate and l_2_mul 3 with 2 restarts of 150, 75 and epsilon 1.1 agents 25. Total Examples: 1, Iterations:50, espilon: 1.1 and Max-L2:5 Agents: 25 l_2_mul: 3. Accuracy: 0.0 Mean L2 Counted: 2.5126176865402976 Query: 6953.0"
+git commit -m "L2 2.59, if r1>MOA, Mul/Div original and brownian in add/sub delta = 0.25, dt = 0.1, 50 iterate and l_2_mul 3"
+pip install nevergrad
+git clone https://github.com/amir1m/nevergrad.git
+pip uninstall nevergrad
+git commit -m "TLBO Total Examples: 1, Iterations:200, espilon: 0.99 and Max-L2:3 Agents: 25 l_2_step: 1.1 Accuracy: 0.0 Mean L2 Counted: 6.010918393589575 Query: 10226.0"
+git commit -m "Total Examples: 10, Iterations:35, espilon: 0.99 and Max-L2:3 Agents: 25 l_2_step: 1.1 Accuracy: 40.0 Mean L2 Counted: 5.6719557601631285 Query: 1497."
+flask run
+set FLASK_APP "main.py"
+set FLASK_APP 'main.py'
+set FLASK_APP=main.py
+set FLASK_APP=main.py flask run
+FLASK_APP=main.py flask run
+cd youtube/
+mkdir youtube
+cd.
+pip install -r requirements.txt
+pip3 install -r requirements.txt
+conda activate youtube
+conda create --name youtube python=3.7.10
+cd Flask-ToDo-List/
+git clone https://github.com/zacclery/Flask-ToDo-List.git && cd todo_app
+openai api completions.create -e davinci -p "This is a test" -M 5 --stream
+python -m ipykernel install --user --name gpt3
+pip install ipykernel
+python bg.py
+export OPENAI_API_KEY='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'
+pip install openai
+conda activate gpt3
+conda create --name gpt3 python=3.7.10
+cd bugsum
+mkdir bugsum
+git commit -m "Total Examples: 10, Iterations:30, espilon: 0.99 and Max-L2:3 Agents: 25 l_2_step: 1.1 Accuracy: 30.0 Mean L2 Counted: 5.428002780500041 Query: 969.8"
+cat opytimizer.log
+cat opytimizer
+git commit -m "Seperate L2 min with same space"
+python3 -Warnings ignore adv-ml/mnist-adv-v1.py
+python3 --Warnings ignore adv-ml/mnist-adv-v1.py
+python3 --W ignore adv-ml/mnist-adv-v1.py
+git commit -m "Total Examples: 1, Iterations:30, espilon: 0.99 and Max-L2:3 Agents: 25 l_2_step: 1.1 Accuracy: 0.0 Mean L2 Counted: 4.061304406626569 Query: 805.0"
+python3 -w ignore adv-ml/mnist-adv-v1.py
+git commit -m "Gaussian L2 Min: Total Examples: 1, Iterations:30, espilon: 0.99 and Max-L2:3 Agents: 25 l_2_step: 1.1 Accuracy: 0.0 Mean L2 Counted: 4.460565584710261 Query: 805.0"
+git commit -m "Total Examples: 1, Iterations:40, espilon: 0.99 and Max-L2:3 Agents: 25 l_2_step: 2.5
+Accuracy: 0.0 Mean L2 Counted: 4.906936243519434 Query: 1065.0"
+git commit -m "L2 minimization in progress-1"
+rm *.csv
+git commit -m "100 Iterations:30, espilon: 0.99 and Max-L2:3 Agents: 25 l_2_step: 1.5 Accuracy: 41.0 Mean L2 Counted: 6.004526265643105 Query: 775.0"
+git commit -m "10 images:Total Examples: 10, Iterations:30, espilon: 0.99 and Max-L2:3 Agents: 15 l_2_step: 1.5 Accuracy: 40.0 Mean L2 Counted: 6.472184751242184 Query: 465.0"
+git commit -m "10 images Accuracy: 50.0 Mean L2 Counted: 6.5204829110999585 Query: 765.0"
+git commit -m "logging improvements"
+git commit -m "Mod AOA"
+ls -lrt
+python3 adv-ml/mnist-adv-v1.py
+rm  opytimizer.log.2021-05-23
+rm t
+vi t
+python3 adv-ml/mnist-adv-v1.py >>t
+python3 adv-ml/mnist-adv-v1.py >t
+git commit -m "minist"
+pip install gradient-free-optimizers
+pip install SwarmPackagePy
+pip install scipy
+pip install iprogress
+pip install lime
+du -h models
+du -sh models/*
+du -sh models/
+du models/
+du -sh
+du
+pip install shap
+pip install hyperopt
+git checkout opytimizer/optimizers/misc/aoa.py
+mount
+pip install adversarial-robustness-toolbox
+python -m ipykernel install --user --name opyt
+python
+conda create --name opyt python=3.7.10
+conda env create --name opyt1 python=3.7.10
+conda env create --name opyt python=3.7.10
+conda env remove --name opyt
+pip uninstall keras
+python3.9
+pip install keras
+pip install tensorflow-estimator==2.1
+pip uninstall tensorflow-estimator
+pip install tensorflow==2.1
+pip install tensorflow-estimator==2.1.*
+pip install tensorflow==2.3
+pip install  keras==2.1
+pip install  keras=2.1
+pip install --upgrade keras
+pip install --upgrade tensorflow
+pip install git+git://github.com/Trusted-AI/adversarial-robustness-toolbox
+conda install --file requirements.txt
+conda remove --name opyt
+set SM_FRAMEWORK=tf.keras
+%env SM_FRAMEWORK=tf.keras
+ato
+conda install git pip
+conda create --name adv-gen-v2 python=3.7.10
+conda env list
+cond env list
+y
+cd models/
+conda install adversarial-robustness-toolbox
+python3 --version
+python --version
+conda install scikit-learn-intelex
+conda activate adv-gen-v2
+conda create --name adv-gen-v2 python=3.6
+cat requirements.txt
+cd adversarial_genattack
+git clone -b dependabot/pip/tensorflow-gpu-2.3.1  https://github.com/nesl/adversarial_genattack.git
+git clone -b tensorflow-gpu-2.3.1 https://github.com/nesl/adversarial_genattack.git
+ls -a
+cd ../adv-gen/
+cp .gitignore  ../adv-gen/
+cat .gitignore
+cd adversarial_genattack_ORG/
+cd adv-gen
+cp -r adversarial_genattack_ORG/* adv-gen/
+cp -r adversarial_genattack/ adv-gen/
+cp -r adversarial_genattack/* adv-gen/
+git clone https://github.com/amir1m/adv-gen.git
+mv adversarial_genattack adversarial_genattack_ORG
+rm -rf a
+cd a
+cp -r adversarial_genattack/* a/
+mkdir a
+vi .gitignore
+ls -ltrh cifar-data.tar.gz
+time python3 main.py --model=mnist --test_size=10 --mutation_rate=0.30 --alpha=0.5 --adaptive=False --max_steps=100 --eps=0.30  --output_dir=mnist_output --pop_size=4  --temp=0.1
+git checkout main.py
+pip install h5py==2.10.0
+pip uninstall h5py
+pip install imageio
+python3 train_models.py
+conda activate adv-gen
+conda create --name adv-gen python=3.6
+cd Projects/adversarial_genattack/
+cp -r Projects/adversarial_genattack_v2/data/ Projects/adversarial_genattack/
+ls.
+cp -r ../data/ .
+git clone https://github.com/nesl/adversarial_genattack.git
+rm -rf adversarial_genattack/
+conda install --revision 0
+pip install h5py==2.6.0
+pip install tensorflow==1.3
+conda create --name py35 python=3.5
+brew install python@3.6
+brew install python==3.6
+conda create --name adv-gen python==3.6
+git commit -m "1 epoch"
+conda de
+conda install revision 0
+pip install tensorflow-addons==0.6.0
+pip3 uninstall tensorflow-addons
+pip install keras_tensor
+pip3 install keras_tensor
+pip3 install tensorflow-addons
+pip uninstall tensorflow-addons
+pip install tensorflow-addons
+time python3
+python3 abs1.py --debug=True
+python3 abs1.py --debug=False
+python3 abs1.py --help
+python3 abs1.py
+conda  install absl-py
+pip3 install absl
+pip install absl
+pip install abseil
+conda install abseil
+cd adversarial_genattack_v2/
+time python3 train_models.py
+vi report.txt
+tf_upgrade_v2 --intree adversarial_genattack/ --outtree adversarial_genattack_v2/ --reportfile report.txt
+tf_upgrade_v2 --help
+conda install -f requirements.txt
+s
+git commit -m "only MNIST without data"
+git commit "only MNIST without data"
+pip install h5py=2.10.0
+pip install h5py<3.0.0
+time python main.py --model=mnist --test_size=10 --mutation_rate=0.30 --alpha=0.5 --adaptive=False --max_steps=100 --eps=0.30  --output_dir=mnist_output --pop_size=4  --temp=0.1
+pip install h5py
+git checkout train_models.py
+cp -r data/ ~/
+python train_models.py
+pip install tensorflow==1.4
+pip install tensorflow==1.13
+pip3 install tensorflow==1.13
+pip3 uninstall tensorflow
+pip3 install imageio
+watch ls -ltr
+cd ../data/
+cd data
+pip3 install -r requirements.txt.NV
+python3.6 --version
+pip install -r requirements.txt.NV
+mv requirements.txt.ORG requirements.txt
+MV requirements.txt requirements.txt.NV
+cp requirements.txt.NV
+pip3 install tensorflow-gpu
+/usr/local/opt/python@3.9/bin/python3.9 -m pip install --upgrade pip
+sudo python -m pip install --upgrade pip
+python -m pip install --upgrade pip
+python -m pip  --upgrade pip
+vi requirements.txt
+cp requirements.txt requirements.txt.ORG
+conda create --name adv-gen
+conda env --name adv-gen
+conda env create --name adv-gen
+conda env create -n adv-gen
+pip install tensorflow-gpu
+conda create -n "adv-gen" python=3.5 ipython
+pip install neat-python
+conda activate neat
+conda init fish
+conds activate neat
+cond activate neat
+conda create -n neat
+conda create
+conda env
+conda env create -n neat
+conda env create neat
+conda env create --help
+cd src/
+mv apache-maven-3.5.2/ /opt/apache-maven*
+mv apache-maven* /opt/apache-maven*
+sudo chown -R root:wheel apache-maven*
+sudo chown -R root:wheel Downloads/apache-maven*
+chown -R root:wheel apache-maven*
+rm apache-maven-3.5.2-bin.zip
+cd ~/Downloads/
+mvn
+brew install maven
+brew install mvn
+l
+cd spmia-chapter1/
+git clone https://github.com/carnellj/spmia-chapter1.git
+cd spring2/
+mkdir spring2
+ls /Applications/STS.app/Contents/Eclipse/lombok.jar
+vi STS.app/
+file STS
+cd STS
+cd MacOS/
+cd Applications/STS.app/Contents/
+cd /
+cd Applications/
+java -jar lombok-1.16.20.jar
+cd projectlombok/lombok/1.16.20/
+rm -rf projectlombok
+rm -rf lombok/
+java -jar lombok.jar
+cd Downloads/
+file lombok-1.16.20.jar
+cd .m2/repository/org/projectlombok/lombok/1.16.20/
+cd customer-service/
+cp -r customer-service ~/
+cat data.csv
+cat data1.csv
+python3 csvtest.py
+vim csvtest.py
+vi data.csv
+cd pyprog/
+vi csvtest.py
+minikube status
+minikube start
+minikube version
+minikube --version
+minikube -version
+./jmeter
+cd bin/
+cd ~/Downloads/apache-jmeter-3.3/
+cd Contents/
+cd jdk1.8.0_45.jdk/
+cd /Library/Java/JavaVirtualMachines/
+ls /Library/Java/JavaVirtualMachines/
+find jdk
+which java
+java -version
+node src/fn1.js
+cd demo2/
+mkdir demo2
+cd demo1/
+git login
+git show
+git who
+git whoami
+git whoamir
+node
+coffee
+coffee src/server.coffee
+node src/test-pug.js
+coffee src/test-pug.js
+npm install pug --save
+npm install express --save
+npm i
+npm uninstall mongodb
+cat package.json
+npm install mongodb --save
+curl http://localhost:8000/
+npm install coffeescript --save
+npm intstall express --save
+npm intsall express --save
+npm init -y
+mkdir demo1
+kubectl
+brew install kubectl
+xcode-select --install
+brew intall kubectl
+brew update
+pkgutil --pkgs | grep 'org\.jenkins-ci\.' | xargs -n 1 sudo pkgutil --forget
+sudo rm -f /etc/newsyslog.d/jenkins.conf
+sudo dscl . -delete /Groups/jenkins
+sudo rm -rf /Users/Shared/Jenkins
+sudo rm -rf /Applications/Jenkins "/Library/Application Support/Jenkins" /Library/Documentation/Jenkins
+sudo rm /Library/LaunchDaemons/org.jenkins-ci.plist
+sudo rm -rf /var/root/.jenkins ~/.jenkins
+sudo /Library/Application\ Support/Jenkins/Uninstall.command
+sudo /Library/Application Support/Jenkins/Uninstall.command
+arp -a
+sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist
+sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist
+sudo ./install_jenkins_plugin.sh crdentials
+sudo ./install_jenkins_plugin.sh docker-pipeline
+sudo ./install_jenkins_plugin.sh docker-workflow
+sudo rm -rf crdentials.hpi docker-workflow.hpi structs.hpi
+sudo rm -rf workflow*
+rm -rf workflow*
+cd /var/lib/jenkins/plugins/
+sudo chown jenkins:jenkins /var/lib/jenkins/plugins/
+chown jenkins:jenkins /var/lib/jenkins/plugins/
+ls -ltr /var/lib/jenkins/plugins/
+launchctl start /Library/LaunchDaemons/org.jenkins-ci.plist
+launchctl stop /Library/LaunchDaemons/org.jenkins-ci.plist
+./install_jenkins_plugin.sh docker-workflow
+./install_jenkins_plugin.sh
+chmod +x install_jenkins_plugin.sh
+ls -lr
+cd jenkins1/
+curl -X POST -d '<jenkins><install plugin="docker-workflow@latest" /></jenkins>' --header 'Content-Type: text/xml' http://localhost:8080/pluginManager/installNecessaryPlugins
+docker run -it -p 8000:8000 getintodevops-hellonode:1
+docker build . -t getintodevops-hellonode:1
+npm start
+mkdir jenkins1
+ls -ltr  /var/log/jenkins/jenkins.log
+sudo launchctl load -w /Library/LaunchDaemons/org.jenkins-ci.plist
+launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist
+launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist
+sudo cat /Users/Shared/Jenkins/Home/secrets/initialAdminPassword
+cat /Users/Shared/Jenkins/Home/secrets/initialAdminPassword
+cd /Users/Shared/Jenkins/Home/secrets/initialAdminPassword
+unzip Ubuntu_17.10-VB-64bit.7z
+lspci | awk '/net/ {print $1}' | xargs -i% lspci -ks %
+open /Users/amirmukeri/express-react-starter/t1.html
+code .
+cd express-react-starter/
+git clone https://github.com/burkeholland/express-react-starter.git
+rm -rf express-react-starter/
+eslint --init
+npm install -g eslint
+node -v
+nvm alias default 8.4.0
+reset
+cd azure-iot/express-react-starter/
+nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+nvm list
+rm -rf node_modules/
+npm install
+open http://bitly.com/express-react-starter
+mkdir azure-iot/
+brew install python
+python3.4 nextbus.py
+python3 nextbus.py
+cd /Users/amirmukeri/PycharmProjects/AlgoInterviews
+brew upgrade nvm
+brew install nvm
+npm install nvm
+nvm --help
+npm install egghead-downloader -g
+egghead-downloader -c https://egghead.io/series/getting-started-with-redux
+npm install -g get-links-cli
+clear
+cls
+cd react-practice/
+d react-practice/
+cd Projects
+gs
+gs]
+git clone https://github.com/amir1m/react-practice.git
+mkdir Projects/
+arp -
+ifconfig
+docker run -it --link learn-redis:redis --rm redis redis-cli -h redis -p 6379
+docker --help
+docker ps
+docker ls
+docker run -it --rm redis redis-cli --help
+cd redislearn/
+docker run --name learn-redis -p 16379:6379 -d redis:3.2.4
+mkdir redislearn
+brew install tmux
+tmux
+nslookup mail.citrix.com
+say -v Veena  "Maryam what are you talking about"
+say "Maryam what are you talking about"
+man say
+say
+say ?
+say -help
+say --help
+say "Hello Amir"
+say "Hello Afsha"
+say "Hello Maryam"
+say "Hello Ibrahimmmm"
+emacs
+cd Learning/Tech/JavaScript/
+cd Projects/ottegram/
+vi hello.c
+./a.out
+cc hello.c
+cc
+npm install -g meshblu-util
+lt --port 3000
+lt --port 8000
+node index.js
+npm install --save http
+npm init
+cd test-lt
+mkdir test-lt
+mkir test-lt
+npm install -g localtunnel
+browser-sync start --server --browser "Google Chrome" --files "stylesheets/*.css, *.html"
+npm install browser-sync -g
+docker start
+docker up
+docker up -d
+docker run --rm --name functions --privileged -it -e "DB=bolt:///app/data/bolt.db" -v $PWD/data:/app/data -p 8080:8080 iron/functions
+ping www.google.com
+nkhfds
+bin/pyspark
+pyspark
+jupyter
+sudo easy_install jupyter
+sudo easy_install six
+easy_install jupyter
+sudo pip install jupyter
+sbt assembly
+cd spark-2.1.0-bin-hadoop2.7/
+brew install sbt
+java -v
+java --version
+pip install pyspark
+brew install pyspark
+mocha test1.js
+cd test/
+npm install chai --save
+mocha
+npm install -g chai --save-dev
+npm install -g chai --save
+cd research/asyn/test_async/
+fish_config
+cd test
+npm install -g chai
+npm install -g mocha
+cd test_async/
+mkdir test_async
+cd asyn/
+mkdir asyn
+cd research/
+mkdir research
+cd node_apps/exp-mocha/
+grunt workon
+gem install sass
+npm install -g grunt-contrib-imagemin
+grunt
+yo node-express
+cd exp-mocha/
+mkdir exp-mocha
+npm install -g generator-node-express
+rm -rf  test_app1/
+rmdir test_app1/

@@ -1,0 +1,22 @@
+legit 50K
+
+*Dictionary based:
+matsnu
+gozi
+suppobox
+
+*Random:
+ramdo
+cryptolocker
+pushdo
+
+* Model Names:
+one of:
+- 'fasttext' for FastText model
+- 'nbsvm' for NBSVM model
+- 'logreg' for logistic regression using embedding layers
+- 'bigru' for Bidirectional GRU with pretrained word vectors
+- 'bert' for BERT Text Classification
+- 'distilbert' for Hugging Face DistilBert model
+==========
+[]
