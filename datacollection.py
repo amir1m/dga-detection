@@ -2,7 +2,7 @@ import pandas as pd
 import sys
 from utils import *
 
-logger = get_logger('datacollection', file = False)
+logger = get_logger('datacollection', file = True)
 logger.setLevel(logging.DEBUG)
 
 data_dir = 'data/umudga/'
@@ -48,4 +48,5 @@ dataset.to_csv(dataset_file, index=False)
 
 r_d = pd.read_csv(dataset_file)
 
+r_d
 logger.debug(f"r_d:\n{r_d.head()} \nand stats:\n{r_d['label'].value_counts()}")
