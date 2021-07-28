@@ -1,2 +1,2 @@
-# dga-weak-supervised
+# dga
 DGA Weak Supervised
