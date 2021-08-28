@@ -1,0 +1,6 @@
+1. Neuroevolution NIDS
+
+2. Using Shapely Values for adversarial example generation
+
+3. What is the impact tuning of NN on adversarial examples
+

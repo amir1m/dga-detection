@@ -132,6 +132,7 @@ dmypy.json
 *.gz
 
 #Model
-/model
+model/
 
 .DS_Store
+data/

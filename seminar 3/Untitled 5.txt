@@ -1,0 +1,33 @@
+0.9188 winner ~ s(assets) + s(criminal_cases)
+
+0.9258 winner ~ s(assets) + alliance + education + state
+
+0.9266 winner ~ s(criminal_cases) + + s(assets) + alliance + education + state
+
+0.9271 winner ~ s(criminal_cases) + s(assets) + alliance + serious_criminal_cases  + gender
+
+43.33
+34.88
+38.79
+
+
+
+Also, 
+
+Bayesian inferential methods are natural fit in order to meet this requirement. However, many of the Bayesian methods suffer from scalability issues when applied to Bug Data. 
+
+On the other hand, other more complex models such as Random Forest, eXtreme Gradient Boosting(XGB), Deep Neural Networks (DNN) are powerful at learning the data representation and at prediction accuracy. However, they are black box in nature and need help from external interpretation techniques such as Shapley values, LIME to explain their results.
+
+In this research we intend to apply both Bayesian methods as well as more powerful black box methods to understand the relationship that exists in the dataset.
+
+-----
+1.1 Social Data Science 
+
+Data Science has shown promising success in applications to domains ranging from medical diagnosis to e-commerce. However, it is to be noted that there are different expectations 
+
+There could be legal or policy decisions made as a results of analysis of social data, decision whose impact is far reaching impacting human lives.Therefore, there is a need to be more transparency in modeling such social processes and interactions. For such high stakes applications interpretability of the models is equally important as the accuracy of the prediction of outcome. For example, complex models such as Deep Neural Networks (DNN) or Random Forests could be very well providing more accuracy in predicting the loan default for prospective bank customers. However legally customers may demand to know why their loan application was rejected if it was rejected. In such cases complex and black box models fail the test of interpretability without external help. High accuracy of complex models doesn't’t necessarily translate to high interpretability. 
+
+Therefore, the purpose of the modeling influences what methods and modeling technique can be used. Opaque models on their own do not provide traceability from the result to dataset, therefore are not considered suitable for meeting the needs of interpretability directly. Tools from Explainable Artificial Intelligence are used to achieve the goals of explainability. 
+
+
+

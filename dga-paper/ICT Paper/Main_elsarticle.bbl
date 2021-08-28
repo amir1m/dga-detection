@@ -1,0 +1,54 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{kuhrer2014paint}
+M.~K{\"u}hrer, C.~Rossow, T.~Holz, Paint it black: Evaluating the effectiveness
+  of malware blacklists, in: International Workshop on Recent Advances in
+  Intrusion Detection, Springer, 2014, pp. 1--21.
+
+\bibitem{antonakakis2012throw}
+M.~Antonakakis, R.~Perdisci, Y.~Nadji, N.~Vasiloglou, S.~Abu-Nimeh, W.~Lee,
+  D.~Dagon, From throw-away traffic to bots: detecting the rise of dga-based
+  malware, in: 21st $\{$USENIX$\}$ Security Symposium ($\{$USENIX$\}$ Security
+  12), 2012, pp. 491--506.
+
+\bibitem{woodbridge2016predicting}
+J.~Woodbridge, H.~S. Anderson, A.~Ahuja, D.~Grant, Predicting domain generation
+  algorithms with long short-term memory networks, arXiv preprint
+  arXiv:1611.00791 (2016).
+
+\bibitem{yu2017inline}
+B.~Yu, D.~L. Gray, J.~Pan, M.~De~Cock, A.~C. Nascimento, Inline dga detection
+  with deep networks, in: 2017 IEEE International Conference on Data Mining
+  Workshops (ICDMW), IEEE, 2017, pp. 683--692.
+
+\bibitem{yang2020detecting}
+L.~Yang, G.~Liu, Y.~Dai, J.~Wang, J.~Zhai, Detecting stealthy domain generation
+  algorithms using heterogeneous deep neural network framework, Ieee Access 8
+  (2020) 82876--82889.
+
+\bibitem{ren2020dga}
+F.~Ren, Z.~Jiang, X.~Wang, J.~Liu, A dga domain names detection modeling method
+  based on integrating an attention mechanism and deep neural network,
+  Cybersecurity 3~(1) (2020) 1--13.
+
+\bibitem{vaswani2017attention}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
+  {\L}.~Kaiser, I.~Polosukhin, Attention is all you need, in: Advances in
+  neural information processing systems, 2017, pp. 5998--6008.
+
+\bibitem{devlin2018bert}
+J.~Devlin, M.-W. Chang, K.~Lee, K.~Toutanova, Bert: Pre-training of deep
+  bidirectional transformers for language understanding, arXiv preprint
+  arXiv:1810.04805 (2018).
+
+\bibitem{zago2020umudga}
+M.~Zago, M.~G. P{\'e}rez, G.~M. P{\'e}rez, Umudga: A dataset for profiling
+  algorithmically generated domain names in botnet detection, Data in brief 30
+  (2020) 105400.
+
+\end{thebibliography}
