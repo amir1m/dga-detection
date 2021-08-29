@@ -107,12 +107,12 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../../dga-paper/figures/DGA-Workflow.png
-	scale 40
+	scale 60
 
 \end_inset
 
@@ -184,7 +184,7 @@ al Encoder Representational from Transformer (BERT) based method.
  We empirically demonstrate the efficacy of BERT on detecting malicious
  domain names generated using dictionary based real world Domain Generation
  Algorithm(DGA).
- The proposed design outperforms many state of the art methods of malicious
+ The proposed design outperforms  state of the art methods of malicious
  domain name on detection by more 9 absolute percentage points.
 \end_layout
 

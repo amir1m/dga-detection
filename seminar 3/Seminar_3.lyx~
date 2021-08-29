@@ -32,7 +32,7 @@
 \usepackage{array}
 \usepackage{graphicx}
 \usepackage{multirow}
-
+\usepackage{float}
 \newcommand\MyBox[2]{
   \fbox{\lower0.75cm
     \vbox to 1.7cm{\vfil
@@ -45,6 +45,9 @@
 \renewcommand\]{\end{equation}}
 \end_preamble
 \use_default_options false
+\begin_modules
+theorems-ams
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -289,15 +292,10 @@ filename "chapters/Chapter 5.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\bibname}{References}
-\end_inset
-
-
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "references/bao"
-options "styles/bibtex/gillow"
+\start_of_appendix
+\begin_inset CommandInset include
+LatexCommand include
+filename "appendices/Appendix.lyx"
 
 \end_inset
 
@@ -305,17 +303,18 @@ options "styles/bibtex/gillow"
 \end_layout
 
 \begin_layout Standard
-\start_of_appendix
-\begin_inset CommandInset include
-LatexCommand include
-filename "appendices/Appendix 1.lyx"
-
+\begin_inset FormulaMacro
+\newcommand{\bibname}{References}
 \end_inset
 
 
-\begin_inset CommandInset include
-LatexCommand include
-filename "appendices/Appendix 2.lyx"
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "references/bao"
 
 \end_inset
 

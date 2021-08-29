@@ -100,7 +100,7 @@ ed machine learning classifiers.
  The proposed design is simple and doesn't require any feature engineering
  or hyperparameter tuning.
  We also, provide comparison with other conventional deep learning based
- models used for malicious domain names.
+ models used for detecting and classifying malicious domain names.
 \end_layout
 
 \begin_layout Abstract

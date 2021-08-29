@@ -1,0 +1,690 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ociamthesis-lyx
+\begin_preamble
+\usepackage{listings}
+\usepackage{xcolor}
+\end_preamble
+\options a4paper,titlepage
+\use_default_options false
+\master ../thesis.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\listings_params "captionpos=b"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Proposed Methodology
+\end_layout
+
+\begin_layout Section
+Introduction 
+\end_layout
+
+\begin_layout Standard
+We start with simpler neural network architecture with embedding layer in
+ our experiments.
+ Gradually, experiments with more complex models such as CNN, RNN, LSTM,
+ Bi-LSTM, Stacked-LSTM, and finally Transformer architecture was experimented
+ with.
+ In all the experiments character level embedding as opposed word level
+ embedding was used due to poor performance of word embeddings model.
+ This is a natural consequence of the fact that domain name is continuous
+ sequence of characters without any spaces hence character level embedding
+ is more suitable than a word level.
+ 
+\end_layout
+
+\begin_layout Standard
+DNN used is conventional feed forward deep neural network trained with back
+ propagation.
+ It has 3 dense hidden layers with 128 neurons, 
+\emph on
+relu
+\emph default
+ activation function was used.
+ To avoid overfitting dropout after each dense layer was used.
+ CNN model consisted of SpatialDropout1D layer and one convolution 1D followed
+ by max-pooling layer.
+ LSTM model has one LSTM layer.
+ GRU (Gated Recurring Unit) model includes one layer of 256 GRU units.
+ Stacked LSTM units have two bidirectional LSTM layers with 64 units each.
+\end_layout
+
+\begin_layout Standard
+Following sections describes these architecture in detail.
+ These architectures are further detailed out in Appendix A.
+\end_layout
+
+\begin_layout Section
+Recurrent Neural Network (RNN)
+\end_layout
+
+\begin_layout Standard
+Conventional DNN are inadequate when it comes to handling variable sequence
+ inputs.
+ On the other hand, recurrent loop from output to inputs allows then to
+ handle variable length data.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../dga-paper/figures/RNN.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Computational-RNN"
+
+\end_inset
+
+Computational graph of Recurrent Neural Network
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+RNNs are trained using backpropagation algorithm that takes in to account
+ the temporal nature of input sequence, called as Backpropagation Through
+ Time (BPTT).
+ As shown in computational graph Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Computational-RNN"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, at each time step following updates are applied
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula 
+\begin{multline}
+a^{(t)}=b+\mathbf{W}h^{(t-1)}+\mathbf{U}\mathbf{x}^{(t)}\\
+\mathbf{h}^{(t)}=tanh(\mathbf{a}^{(t)})\\
+\mathbf{o}^{(t)}=\mathbf{c+V}\mathbf{h}^{(t)}\\
+\hat{\mathbf{y}^{(t)}}=softmax(\mathbf{o}^{(t)})\\
+\label{eq:RNN_Update}
+\end{multline}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RNN_Update"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\series bold
+
+\begin_inset Formula $\mathbf{U,V,W}$
+\end_inset
+
+ 
+\series default
+are weight matrices, 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ are biases, 
+\begin_inset Formula $\mathbf{h}$
+\end_inset
+
+ is a hidden state.
+ Hidden state at a time 
+\begin_inset Formula $t$
+\end_inset
+
+ is an input to next time step 
+\begin_inset Formula $t+1$
+\end_inset
+
+.
+ Final layer is a 
+\begin_inset Formula $softmax$
+\end_inset
+
+ layer that gives a valid probability distribution over output sequence.
+\end_layout
+
+\begin_layout Standard
+Secondly, due to recurrent structure weights are shared across layers that
+ reduced number of parameters to be learned.
+ However, it leads to the problem of 
+\emph on
+vanishing gradients
+\emph default
+.
+ Gradient over long range sequences when multiplies either reduces to almost
+ zero or explode to a large value.
+ Also,  inability of the network to remember or refer over long sequences.
+\end_layout
+
+\begin_layout Section
+Long Short Term Memory (LSTM)
+\end_layout
+
+\begin_layout Standard
+LSTM 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hochreiter1997long"
+literal "false"
+
+\end_inset
+
+networks utilize special gated structure with three gates to control memorizatio
+n and forgetting in RNN.
+ They mitigate the problem of vanishing gradients.and also allows for remembering
+ over long range.
+ LSTM cell comprising of gate structure is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Long-Short-Term"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../dga-paper/figures/LSTM_Cell.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Long-Short-Term"
+
+\end_inset
+
+Long Short Term Memory(LSTM) Cell
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Changes from RNN include, hidden state 
+\begin_inset Formula $\mathbf{h}_{t}$
+\end_inset
+
+ becomes cell state 
+\begin_inset Formula $\mathbf{c}_{t}$
+\end_inset
+
+ and output 
+\begin_inset Formula $\mathbf{y_{t}}$
+\end_inset
+
+ becomes hidden state 
+\begin_inset Formula $\mathbf{h_{t}}$
+\end_inset
+
+.
+ Also, update equation are changes as in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:LSTMS_Update"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline}
+Input\;Gate:i_{t}=\sigma(W^{(ii)}\bar{x_{t}}+W^{(hi)}h_{t-1})\\
+Forget\;Gate:f_{t}=\sigma(W^{(if)}\bar{x_{t}}+W^{(hf)}h_{t-1})\\
+Output\;Gate:o_{t}=\sigma(W^{(io)}\bar{x_{t}}+W^{(ho)}h_{t-1})\\
+Process\;Input:\widetilde{c}=tanh(W^{(i\tilde{c})}\bar{x_{t}}+W^{(h\tilde{c})}h_{t-1})\\
+Cell\;Update:c_{t}=f_{t}*c_{t-1}+i_{t}*\tilde{c_{t}}\\
+Output:y_{t}=h_{t}=o_{t}tanh(c_{t})\\
+\label{eq:LSTMS_Update}
+\end{multline}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bi-LSTM 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "graves2005framewise"
+literal "false"
+
+\end_inset
+
+ is a variant of LSTM.
+ In Bi-LSTM there are two LSTM layers, one processes words in a sentence
+ in forward and another in backward direction since many times context in
+ one direction is not sufficient for prediction or in language modeling
+ tasks.
+\end_layout
+
+\begin_layout Section
+Transformers and Bidirectional Encoder Representations from Transformer(BERT)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Attention Section: Attention to avoid curruption by input 
+\begin_inset Quotes eld
+\end_inset
+
+input
+\begin_inset Quotes erd
+\end_inset
+
+ to hidden state-memory
+\end_layout
+
+\begin_layout Plain Layout
+- Alignment of o/p to i/p word not necessarily in same order
+\end_layout
+
+\begin_layout Plain Layout
+- Softmax of inputs
+\end_layout
+
+\begin_layout Plain Layout
+- Alignment as dot product
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Attention mechanisms and Transformers have revolutionized the field of NLP.
+ Similar to human brain, attention mechanism helps in focusing for more
+ relevant words in sentence while deciding how much importance to give to
+ which part.
+ Vaswani et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vaswani2017attention"
+literal "false"
+
+\end_inset
+
+ proposed a neural network architecture based on attention mechanism, They
+ removed the recurrent layers thereby reducing the training time and making
+ it possible to take advantage of parallel operations which was not possible
+ with RNN due to sequential series of operations.
+\end_layout
+
+\begin_layout Standard
+As illustrated Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Transformer-architecture-propose"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, Transformer architecture consists of encoder and decoder.
+ Consider an example of machine translation task.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../dga-paper/figures/Transformer.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Transformer-architecture-propose"
+
+\end_inset
+
+Transformer architecture proposed by Vaswani et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vaswani2017attention"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Source language statement is embedded and processed by encoder while the
+ target language translation so far is produced by decoder one token at
+ a time.
+ Attention is basically works by querying a query vector against database
+ of key vectors that are mapped to set of values (output values so far)
+ as depicted in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:AttentionEquation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Attention(Q,K,V)=softmax(\frac{QK^{T}}{\sqrt{d_{k}}})V\label{eq:AttentionEquation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Attention is basically a scaled dot product that assigns probability distributio
+n over keys that are closely aligned to query vector Q.
+ Transformers use multi-head attention i.e.
+ multiple projections using equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:AttentionEquation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are used in practice as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Multi-head-attention"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../dga-paper/figures/Multihead_attention.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Multi-head-attention"
+
+\end_inset
+
+Multi-head attention
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Implementation of Transformer architecture was found to outperform all the
+ state of the art machine translation benchmark and soon became the state
+ 0f the art mode for machine translation and other NLP tasks.
+\end_layout
+
+\begin_layout Standard
+Bidirectional Encoder Representations from Transformer (BERT) by Devlin
+ et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "devlin2018bert"
+literal "false"
+
+\end_inset
+
+ in 2018 that takes benefit of transfer learning.
+ Transfer learning allows model trained on different dataset to be utilized
+ for specific downstream task.
+ It is based on Transformer architecture however it only uses encoder from
+ Transformer.
+ Training BERT happens in two steps viz.
+ 
+\emph on
+Pre-training
+\emph default
+ and 
+\emph on
+Fine-Tuning.
+\end_layout
+
+\begin_layout Standard
+In 
+\series bold
+pre-training phase
+\series default
+, through unsupervised learning BERT develops natural language understanding
+ using Masked Language Modeling(MLM) and Next Sentence Prediction (NSP).
+ MLM is unsupervised task where a random word is masked in a sentence and
+ model predicts the probability distribution of output words.
+ For language modeling BERT uses deep bidirectional model instead of using
+ only left-to-right or concatenated two model outputs.
+ In case of NSP, given a pair of sentences A and B, if B follows A then
+ its labelled as IsNext otherwise NotNext.
+ BERT is pertained on Wikipedia and BookCorpus dataset.
+ 
+\end_layout
+
+\begin_layout Standard
+In
+\series bold
+ fine-tuning phase
+\series default
+, BERT is trained for task specific labeled dataset such as sentiment classifica
+tion or Question-Answering.
+ In this phase, pre-trained model is trained end-to-end and all the parameters
+ are fine tuned for specific task.
+ This is relatively inexpensive and less time consuming training.
+ 
+\end_layout
+
+\begin_layout Standard
+For the problem at the hand, we used 
+\begin_inset Formula $BERT_{base}$
+\end_inset
+
+ model with total of 110M parameters.
+ 
+\end_layout
+
+\end_body
+\end_document

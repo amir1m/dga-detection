@@ -107,13 +107,9 @@ We start with simpler neural network architecture with embedding layer in
 \end_layout
 
 \begin_layout Standard
-Following sections describes these architecture in detail.
-\end_layout
-
-\begin_layout Standard
-This is conventional feed forward deep neural network trained with back
+DNN used is conventional feed forward deep neural network trained with back
  propagation.
- DNN with 3 dense hidden layers with 128 neurons, 
+ It has 3 dense hidden layers with 128 neurons, 
 \emph on
 relu
 \emph default
@@ -124,6 +120,11 @@ relu
  LSTM model has one LSTM layer.
  GRU (Gated Recurring Unit) model includes one layer of 256 GRU units.
  Stacked LSTM units have two bidirectional LSTM layers with 64 units each.
+\end_layout
+
+\begin_layout Standard
+Following sections describes these architecture in detail.
+ These architectures are further detailed out in Appendix A.
 \end_layout
 
 \begin_layout Section
@@ -264,7 +265,7 @@ Secondly, due to recurrent structure weights are shared across layers that
 vanishing gradients
 \emph default
 .
- Graidient over long range sequences when multiplies either reduces to almost
+ Gradient over long range sequences when multiplies either reduces to almost
  zero or explode to a large value.
  Also,  inability of the network to remember or refer over long sequences.
 \end_layout
@@ -398,6 +399,43 @@ literal "false"
 
 \begin_layout Section
 Transformers and Bidirectional Encoder Representations from Transformer(BERT)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Attention Section: Attention to avoid curruption by input 
+\begin_inset Quotes eld
+\end_inset
+
+input
+\begin_inset Quotes erd
+\end_inset
+
+ to hidden state-memory
+\end_layout
+
+\begin_layout Plain Layout
+- Attn first studies in CV 2014
+\end_layout
+
+\begin_layout Plain Layout
+- Alignment of o/p to i/p word not necessarily in same order
+\end_layout
+
+\begin_layout Plain Layout
+- Softmax of inputs
+\end_layout
+
+\begin_layout Plain Layout
+- Alignment as dot product
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

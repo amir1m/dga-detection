@@ -107,12 +107,12 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../../dga-paper/figures/DGA-Workflow.png
-	scale 40
+	scale 50
 
 \end_inset
 
